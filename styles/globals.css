@@ -1,26 +1,87 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 html,
 body {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: #2D0505;
+  background: #BED9DB;
+    
+}
+main {
+  width: 100%;
+  max-width: 1304px;
+  margin: 0 auto;
+  padding: 0 24px;
+  /* background-image: url("../public/bg.png"); */
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-a {
+main nav {
+  padding-top: 32px;
+  margin-bottom: 98px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+main nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+  margin-right: 24px;
+}
+main nav ul li a {
+  text-decoration: none;
+  color: #2D0505;
+  position: relative;
+}
+main nav ul li a:hover {
+  color: #480808;
+  background-color: grey;
+}
+main nav ul li a:hover::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: aqua;
+}
+
+main .container h2{
+  color: #676672;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 47px;
+}
+main .container span {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 53px;
+  color: #1C0EB7;
+}
+
+
+
+
+/* a {
   color: inherit;
   text-decoration: none;
 }
 
 * {
   box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
-}
+} */
